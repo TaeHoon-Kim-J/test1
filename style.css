@@ -1,0 +1,48 @@
+body {
+  border: solid 5px gray;
+  margin: 10px;
+}
+/* tag = 변환 우선도 낮음 */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* id = 변환 우선도 높음 */
+
+/* class = 변환 우선도 중간 */
+h1 {
+  font-size: 60px;
+  text-align: center;
+  border-bottom: solid 1px gray;
+  margin: 0;
+  padding: 20px;
+}
+ol {
+  border-right: solid 1px gray;
+  width: 100px;
+  margin: 10px;
+  padding: 20px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+#article {
+  padding-left: 20px;
+}
+
+@media (max-width: 750px) {
+  #grid {
+    display: block;
+  }
+
+  #grid ol {
+    border-right: none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
