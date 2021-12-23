@@ -5,14 +5,19 @@
     <title></title>
   </head>
   <body>
-    <h1>비교</h1>
-    <h2>프로그램</h2>
+    <h1>반복 배열</h1>
     <script>
-      document.write("1<br>");
-      document.write("2<br>");
-      document.write("3<br>");
-      document.write("4<br>");
+    var coworkers = ['태훈', '조자', '관조자', '김태훈']
     </script>
-    <h2>IF-true</h2>
+    <h2>Co workers</h2>
+    <u1>
+      <script>
+        var i = 0;
+        while (i < coworkers.length) {
+          document.write('<li>'+coworkers[i]+'</li>');
+          i = i + 1
+        }
+      </script>
+    </u1>
   </body>
 </html>
